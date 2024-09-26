@@ -3,6 +3,19 @@
  * Student Name: Severyn Kotyhoroshko
  * Student Group: 123
  * Lab 1.4
+ * sfddsf
+ * sdf
+ * sdf
+ * sd
+ * fs
+ * df
+ * sd
+ * fs
+ * f
+ * sdf
+ * sdf
+ * sd
+ * f
  */
 
 #include <iostream>
