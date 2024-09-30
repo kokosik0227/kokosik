@@ -1,3 +1,10 @@
+/**
+ * Done by:
+ * Student Name: Nikita Kompanchenko
+ * Student Group: 123
+ * Lab 1.4
+ */
+
 #include <iostream>
 
 
@@ -7,28 +14,28 @@ int main()
 	int nB;
 	float nC;
 	double nD;
-	// Опис змінних напередвизначених типів
+	// Description of variables of predefined types
 
 	unsigned short* pnA;
 	int* pnB;
 	float* pnC;
 	double* pnD;
-	//Опис вказівних змінних відповідних типів
+	//Description of the pointer variables of the corresponding types
 
 	void* p_void;
-	//Опис нетипізованої вказівної змінної
+	//Description of an untyped pointer variable
 
 	pnA = &nA;
 	pnB = &nB;
 	pnC = &nC;
 	pnD = &nD;
-	//Ініціювання вказівних змінних адресами змінних
+	//Initiating pointed variables with variable addresses
 
 	*pnA = 45671;
 	*pnB = 167;
 	*pnC = -3.9412;
 	*pnD = -6.8e-6;
-	// Ініціювання змінних значеннями, використовуючи операцію розіменування вказівних змінних
+	//Initiating variables with values using the operation of dereferencing pointing variables
 
 	int sizeShort = sizeof(nA);
 	int sizeShortP = sizeof(pnA);
@@ -39,16 +46,16 @@ int main()
 	int sizeDouble = sizeof(nD);
 	int sizeDoubleP = sizeof(pnD);
 	int sizeVoid = sizeof(p_void);
-	//Визначення розміру всіх змінних програми
+	//Sizing all program variables
 
 	p_void = pnA;
 	p_void = pnB;
 	p_void = pnC;
 	p_void = pnD;
-	//Ініціювання нетипізованої вказівної змінної адресами типізованих вказівних змінних
+	//Initiating an untyped pointer variable with addresses of typed pointer variables
 
 	int& linkB = nB;
-	//Опис посилання
+	//Link description
 
 	return 0;
 }
