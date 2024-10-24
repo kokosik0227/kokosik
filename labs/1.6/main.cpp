@@ -1,6 +1,7 @@
 #include <iostream>
 
 int main() {
+    setlocale(LC_ALL, "uk-UA");
     // 1. Опис змінних символьного типу
     char charVar1;
     char charVar2;
