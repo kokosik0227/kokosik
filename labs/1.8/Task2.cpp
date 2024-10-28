@@ -11,7 +11,7 @@ int countSetBits(int num) {
 
 int main() {
     setlocale(LC_ALL, "uk-UA");
-    int число;
+    int число; 
     std::cin >> число;
     std::cout << "Кількість одиничних бітів: " << countSetBits(число) << "\n";
     return 0;
