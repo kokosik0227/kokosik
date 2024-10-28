@@ -15,14 +15,18 @@ int getPrecedence(char op) {
 
 // Функція для виконання операції
 double calculate(double a, double b, char op) {
-    switch (op) {// вибір операції
-    case '+': return a + b;
-    case '-': return a - b;
-    case '*': return a * b;
-    case '/':
+    // вибір операції
+    if (op == '+') { return a + b; }
+    else if (op == '-') { return a - b; }
+    else if (op == '*') { return a * b; }
+    else if (op == '/') {
         if (b == 0) throw runtime_error("Division by zero");
-        return a / b;
-    default: throw runtime_error("Invalid operator");// якщо недопустимий оператор
+        else {
+            return a / b;
+        }
+    }
+    else {
+        throw runtime_error("Invalid operator");// якщо недопустимий оператор
     }
 }
 
